@@ -1,0 +1,87 @@
+.tabs_buttons {
+    margin-bottom: 0px;
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 0px;
+        padding: 15px 22px;
+        border: 2px solid #000;
+        background: #faf5e8;
+        text-align: center;
+        color: #761100;
+        text-decoration: underline;
+        border-bottom: 4px solid #e6e2d6;
+        border-radius: 2px 2px 0 0;
+        list-style-type: none;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+            background: #fae2bb;
+        }
+        &.active {
+            background: #000;
+            border-bottom: 4px solid #000;
+            color: #fff;
+            text-decoration: none;
+            &:after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 15px solid #000;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: -15px;
+            }
+        }
+    }
+}
+
+.tabs_content {
+    padding: 30px;
+    border: 2px solid #000;
+    background: #fffffa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    .tab_box {
+        display: none;
+        &.active {
+            display: block;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .block_header {
+            font-size: 21px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            strong {
+                font-weight: 600;
+            }
+        }
+        .green_header {
+            font-weight: 400;
+            color: #000;
+            font-size: 22px;
+            position: relative;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            padding-left: 15px;
+            &:before {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 100%;
+                background: #dbdbcb;
+                position: absolute;
+                top: -10px;
+                left: -15px;
+            }
+        }
+    }
+}
